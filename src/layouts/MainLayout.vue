@@ -32,38 +32,24 @@
         <q-item-label
           header
         >
-          Essential Links
+          Menú
         </q-item-label>
         <q-item clickable @click="navigate('heroSection')">
           <q-item-section>
-            <q-item-label>Home</q-item-label>
+            <q-item-label>Inicio</q-item-label>
           </q-item-section>
         </q-item>
         <q-item clickable @click="navigate('features')">
           <q-item-section>
-            <q-item-label>Features</q-item-label>
+            <q-item-label>Programa de Gobierno</q-item-label>
           </q-item-section>
         </q-item>
         <q-item clickable @click="navigate('about')">
           <q-item-section>
-            <q-item-label>About</q-item-label>
+            <q-item-label>Candidato</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable v-if="!isAuthenticated" to="/login">
-          <q-item-section>
-            <q-item-label>Login</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable  v-if="isAuthenticated" to="/admin">
-          <q-item-section>
-            <q-item-label>About</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable  v-if="isAuthenticated" @click="logout">
-          <q-item-section>
-            <q-item-label>About</q-item-label>
-          </q-item-section>
-        </q-item>
+        
       </q-list>
     </q-drawer>
 

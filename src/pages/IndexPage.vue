@@ -15,10 +15,20 @@
             <hover v-slot="{hoverIsActive}">
               <q-card :class="{ 'shadow-6 cursor-pointer': hoverIsActive }">
                 <q-card-section class="text-center">
-                  <q-avatar size="70px" class="bg-primary text-white" icon="bolt"></q-avatar>
+                  <q-avatar size="70px" class="bg-primary text-white" icon="description"></q-avatar>
                   <h5 class="text-h4 q-my-md">Programa de Gobierno</h5>
                   <p class="text-gray text-subtitle1 text-justify">Con el programa de gobierno que pongo a su consideración y que fue construido con la comunidad a través de 20 talleres y la participación de 573 personas, continuaremos con el progreso de estos últimos años y consolidaremos a Girardota como el mejor municipio del norte del Valle de Aburrá, sin perder la idiosincrasia, alegría y cordialidad
 que nos caracteriza.</p>
+                  <q-btn
+                    class="text-white"
+                    elevated
+                    rounded
+                    color="blue"
+                    label="Dercargar"
+                    icon="attach_file"
+                    type="a"
+                    href="https://www.juanignacioalcalde.com/PG Territorio de Vida - Juan Ignacio Torres.pdf"
+                  />
                 </q-card-section>
               </q-card>
             </hover>
