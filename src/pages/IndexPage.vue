@@ -4,7 +4,7 @@
       <div class="heroSection__content container q-mb-xl">
         <img
               style="max-width: fit-content; width: 100%; max-width: 100%;"
-              class="responsive" src="src/assets/FinVideoHorizontal.jpg">
+              class="responsive" src="~assets/FinVideoHorizontal.jpg">
       </div>
 
     </section>
@@ -27,7 +27,7 @@ que nos caracteriza.</p>
                     label="Dercargar"
                     icon="attach_file"
                     type="a"
-                    href="https://www.juanignacioalcalde.com/PG Territorio de Vida - Juan Ignacio Torres.pdf"
+                    href="https://www.juanignacioalcalde.com/pdf/PG.pdf"
                   />
                 </q-card-section>
               </q-card>
@@ -42,7 +42,7 @@ que nos caracteriza.</p>
           <div class="col-0 col-md-6">
             <img
               :style="($q.screen.md || $q.screen.lg || $q.screen.xl) ? 'width: 500px; max-width: fit-content;' : 'width: 100%; max-width: 100%;'"
-              class="responsive q-pa-xl" src="src/assets/Juancho.png">
+              class="responsive q-pa-xl" src="~assets/Juancho.png">
           </div>
           <div class="col-12 col-md-6 self-center text-right">
             <h2 class="text-h3 text-weight-thin fredoka">Candidato</h2>
