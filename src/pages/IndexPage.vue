@@ -2,76 +2,23 @@
   <q-page style="margin-top: -60px">
     <section class="heroSection bg-primary">
       <div class="heroSection__content container q-mb-xl">
-        <div class="row full-width q-mb-xl">
-          <div class="col-12 col-md-6 vertical-middle self-center">
-            <h2 class="text-h3 text-white text-weight-medium fredoka">System Name!</h2>
-            <h4 class="text-h5 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-            <q-btn
-              class="text-black"
-              unelevated
-              color="white"
-              label="Start now"
-              icon="bolt"
-              @click="goToSection('features')"
-            />
-          </div>
-          <div class="col-0 col-md-6">
-            <img
-              :style="($q.screen.md || $q.screen.lg || $q.screen.xl) ? 'width: 600px; max-width: fit-content;' : 'width: 100%; max-width: 100%;'"
-              class="responsive" src="src/assets/hero1.svg">
-          </div>
-        </div>
+        <img
+              style="max-width: fit-content; width: 100%; max-width: 100%;"
+              class="responsive" src="src/assets/FinVideoHorizontal.jpg">
       </div>
-      <div class="waves">
-        <svg class="waves__svg" preserveAspectRatio="none" shape-rendering="auto" viewBox="0 24 150 28"
-             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <defs>
-            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
-          </defs>
-          <g class="parallax">
-            <use fill="rgba(255,255,255,0.7)" x="48" xlink:href="#gentle-wave" y="0"></use>
-            <use fill="rgba(255,255,255,0.5)" x="48" xlink:href="#gentle-wave" y="3"></use>
-            <use fill="rgba(255,255,255,0.3)" x="48" xlink:href="#gentle-wave" y="5"></use>
-            <use fill="rgba(255,255,255,1)" x="48" xlink:href="#gentle-wave" y="7"></use>
-          </g>
-        </svg>
-      </div>
+
     </section>
     <section class="features q-py-xl">
       <div class="container">
         <div class="row q-col-gutter-lg q-py-xl">
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-12">
             <hover v-slot="{hoverIsActive}">
               <q-card :class="{ 'shadow-6 cursor-pointer': hoverIsActive }">
                 <q-card-section class="text-center">
                   <q-avatar size="70px" class="bg-primary text-white" icon="bolt"></q-avatar>
-                  <h5 class="text-h4 q-my-md">Feature 1</h5>
-                  <p class="text-gray text-subtitle1 text-justify">Descrição da feature 1.Descrição da feature
-                    1.Descrição da feature 1.Descrição da feature 1.Descrição da feature 1.</p>
-                </q-card-section>
-              </q-card>
-            </hover>
-          </div>
-          <div class="col-12 col-md-4">
-            <hover v-slot="{hoverIsActive}">
-              <q-card :class="{ 'shadow-6 cursor-pointer': hoverIsActive }">
-                <q-card-section class="text-center">
-                  <q-avatar size="70px" class="bg-primary text-white" icon="bolt"></q-avatar>
-                  <h5 class="text-h4 q-my-md">Feature 2</h5>
-                  <p class="text-gray text-subtitle1 text-justify">Descrição da feature 2.Descrição da feature
-                    2.Descrição da feature 2.Descrição da feature 2.Descrição da feature 2.</p>
-                </q-card-section>
-              </q-card>
-            </hover>
-          </div>
-          <div class="col-12 col-md-4">
-            <hover v-slot="{hoverIsActive}">
-              <q-card :class="{ 'shadow-6 cursor-pointer': hoverIsActive }">
-                <q-card-section class="text-center">
-                  <q-avatar size="70px" class="bg-primary text-white" icon="bolt"></q-avatar>
-                  <h5 class="text-h4 q-my-md">Feature 3</h5>
-                  <p class="text-gray text-subtitle1 text-justify">Descrição da feature 3.Descrição da feature
-                    3.Descrição da feature 3.Descrição da feature 3.Descrição da feature 3.</p>
+                  <h5 class="text-h4 q-my-md">Programa de Gobierno</h5>
+                  <p class="text-gray text-subtitle1 text-justify">Con el programa de gobierno que pongo a su consideración y que fue construido con la comunidad a través de 20 talleres y la participación de 573 personas, continuaremos con el progreso de estos últimos años y consolidaremos a Girardota como el mejor municipio del norte del Valle de Aburrá, sin perder la idiosincrasia, alegría y cordialidad
+que nos caracteriza.</p>
                 </q-card-section>
               </q-card>
             </hover>
@@ -84,18 +31,16 @@
         <div class="row">
           <div class="col-0 col-md-6">
             <img
-              :style="($q.screen.md || $q.screen.lg || $q.screen.xl) ? 'width: 600px; max-width: fit-content;' : 'width: 100%; max-width: 100%;'"
-              class="responsive" src="src/assets/about.svg">
+              :style="($q.screen.md || $q.screen.lg || $q.screen.xl) ? 'width: 500px; max-width: fit-content;' : 'width: 100%; max-width: 100%;'"
+              class="responsive q-pa-xl" src="src/assets/Juancho.png">
           </div>
           <div class="col-12 col-md-6 self-center text-right">
-            <h2 class="text-h3 text-weight-thin fredoka">About us</h2>
+            <h2 class="text-h3 text-weight-thin fredoka">Candidato</h2>
             <p class="text-subtitle1 text-justify">
-              Pellentesque at arcu sit amet enim vehicula aliquet fermentum pretium diam. Etiam et enim sed eros aliquam
-              imperdiet quis non urna. Sed quis ipsum augue. Quisque cursus maximus fringilla. Morbi aliquet blandit
-              augue a cursus.<br/>
-              Nulla egestas orci ut lorem aliquet, at dapibus ligula tristique. Curabitur eu posuere ex. Morbi consequat
-              dui vel nibh bibendum ullamcorper. Ut rhoncus ipsum mi, a venenatis velit sodales at. Phasellus sit amet
-              dignissim diam.</p>
+              Soy Juan Ignacio Torres Gómez, un girardotano educado en un hogar amoroso, familiar y religioso, convencido del respeto por el ser humano, el trabajo con honestidad y la
+importancia de los lazos familiares como soporte de la sociedad.<br/>
+Hoy, como candidato a la alcaldía de nuestro querido municipio, los invito a trabajar por Girardota, para reducir la inequidad y generar oportunidades económicas y sociales sostenibles en el tiempo; me comprometo a enfocar las políticas de gasto social en la mitigación de la desigualdad del ingreso y a romper el ciclo perverso de la pobreza y falta de oportunidades. Necesitamos educar a nuestros niños, niñas y jóvenes para que cuando crezcan contribuyen activamente a la construcción de una sociedad más justa y equitativa. Necesitamos acceder a los servicios de salud no solo para salvar vidas sino para mejorar la calidad de ella. Necesitamos que nuestros adultos mayores cuenten con los recursos necesarios para preservar la dignidad en la
+ancianidad.</p>
           </div>
         </div>
       </div>
