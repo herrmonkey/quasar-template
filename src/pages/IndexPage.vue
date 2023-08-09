@@ -27,7 +27,7 @@ que nos caracteriza.</p>
                     label="Dercargar"
                     icon="attach_file"
                     type="a"
-                    href="https://www.juanignacioalcalde.com/pdf/PG.pdf"
+                    href="https://juanignacioalcalde.netlify.app/pdf/PG.pdf"
                   />
                 </q-card-section>
               </q-card>
