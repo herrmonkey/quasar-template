@@ -1,10 +1,11 @@
 <template>
   <q-page style="margin-top: -60px">
-    <section class="heroSection bg-primary">
-      <div class="heroSection__content container q-mb-xl">
-        <img
-              style="max-width: fit-content; width: 100%; max-width: 100%;"
-              class="responsive" src="~assets/FinVideoHorizontal.jpg">
+    <section class="heroSection bg-white">
+      <div class="heroSection__content container">
+        <q-img
+          src="~assets/FinVideoHorizontal.jpg"
+          fit="cover"
+        />
       </div>
 
     </section>
