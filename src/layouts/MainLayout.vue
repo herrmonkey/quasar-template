@@ -12,24 +12,14 @@
           class="md-and-up-hide"
         />
 
-        <q-toolbar-title>
-          System Name
+        <q-toolbar-title style="font-family: 'Montserrat', sans-serif; font-weight: bold;">
+          Territorio de Vida
         </q-toolbar-title>
 
-        <div class="xs-hide sm-hide">
-          <q-btn flat dense no-caps label="Home" @click="goToSection('heroSection')" class="q-mx-sm"/>
-          <q-btn flat dense no-caps label="Features" @click="goToSection('features')" class="q-mx-sm"/>
-          <q-btn flat dense no-caps label="About" @click="goToSection('about')" class="q-mx-sm"/>
-          <q-btn
-            dense
-            label="Login"
-            to="/login"
-            v-if="!isAuthenticated"
-            flat
-            class="q-px-sm q-ml-md"
-          />
-          <q-btn flat dense label="Dashboard" v-if="isAuthenticated" to="/admin"/>
-          <q-btn flat dense label="Logout" v-if="isAuthenticated" @click="logout"/>
+        <div class="xs-hide sm-hide" style="font-family: 'Montserrat', sans-serif; font-weight: bold;">
+          <q-btn flat dense no-caps label="Inicio" @click="goToSection('heroSection')" class="q-mx-sm"/>
+          <q-btn flat dense no-caps label="Programa de gobierno" @click="goToSection('features')" class="q-mx-sm"/>
+          <q-btn flat dense no-caps label="Candidato" @click="goToSection('about')" class="q-mx-sm"/>
         </div>
       </q-toolbar>
     </q-header>
@@ -42,38 +32,24 @@
         <q-item-label
           header
         >
-          Essential Links
+          Menú
         </q-item-label>
         <q-item clickable @click="navigate('heroSection')">
           <q-item-section>
-            <q-item-label>Home</q-item-label>
+            <q-item-label>Inicio</q-item-label>
           </q-item-section>
         </q-item>
         <q-item clickable @click="navigate('features')">
           <q-item-section>
-            <q-item-label>Features</q-item-label>
+            <q-item-label>Programa de Gobierno</q-item-label>
           </q-item-section>
         </q-item>
         <q-item clickable @click="navigate('about')">
           <q-item-section>
-            <q-item-label>About</q-item-label>
+            <q-item-label>Candidato</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable v-if="!isAuthenticated" to="/login">
-          <q-item-section>
-            <q-item-label>Login</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable  v-if="isAuthenticated" to="/admin">
-          <q-item-section>
-            <q-item-label>About</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable  v-if="isAuthenticated" @click="logout">
-          <q-item-section>
-            <q-item-label>About</q-item-label>
-          </q-item-section>
-        </q-item>
+        
       </q-list>
     </q-drawer>
 
@@ -81,13 +57,10 @@
       <router-view/>
       <q-toolbar class="flex flex-center text-white" style="border-top: 2px solid #0cbcbc; background-color: #263238">
         <div class="q-pa-md q-gutter-sm">
-          <q-btn round type="a" href="https://www.instagram.com/joabson_arley/" class="bg-primary text-white"
+          <q-btn round type="a" href="https://www.instagram.com/elmedicojuanignacio/" class="bg-primary text-white"
                  icon="fab fa-instagram" target="_blank"/>
-          <q-btn round type="a" href="https://github.com/joabsonlg/" class="bg-primary text-white" icon="fab fa-github"
-                 target="_blank"/>
-          <q-btn round type="a" href="#" class="bg-primary text-white" icon="fab fa-twitter"/>
-          <q-btn round type="a" href="#" class="bg-primary text-white" icon="email"/>
-          <q-btn round type="a" href="#" class="bg-primary text-white" icon="fas fa-heart"/>
+          <q-btn round type="a" href="https://twitter.com/elmedicojuanign" class="bg-primary text-white" icon="fab fa-twitter" target="_blank"/>
+          <q-btn round type="a" href="https://www.facebook.com/juanignacio.torresgomez" class="bg-primary text-white" icon="fab fa-facebook"  target="_blank"/>
         </div>
       </q-toolbar>
     </q-page-container>
